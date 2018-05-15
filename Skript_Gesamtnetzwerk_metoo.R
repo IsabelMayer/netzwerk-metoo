@@ -32,10 +32,10 @@ plot(mm)
 # Vertex-Attribut "type" definiert: Journalist = 0, Ressort = 1
 # Journalisten sollen als Kreis in der Farbe "lightblue" und die Ressorts als Sqaure in der Farbe "maroon" gezeigt werden
 
-V(mm)[V(an)$type == 1]$shape <- "square"
-V(mm)[V(an)$type == 0]$shape <- "circle"
-V(mm)[V(an)$type == 0]$color <- "lightblue"
-V(mm)[V(an)$type == 1]$color <- "maroon"
+V(mm)[V(mm)$type == 1]$shape <- "square"
+V(mm)[V(mm)$type == 0]$shape <- "circle"
+V(mm)[V(mm)$type == 0]$color <- "lightblue"
+V(mm)[V(mm)$type == 1]$color <- "maroon"
 
 
 # Gesamtnetzwerk von #metoo anzeigen 
